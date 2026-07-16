@@ -69,7 +69,6 @@ export class SmartBudgetComponent {
           console.log('Backend response:', response);
           this.aiResponse = response.analysis; // Capture response payload
           
-          // 🚀 FORCE UPDATE: Tells Angular to draw the received text to the screen instantly
           this.cdr.detectChanges(); 
         },
         error: (err) => {

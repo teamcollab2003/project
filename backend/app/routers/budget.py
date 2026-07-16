@@ -24,14 +24,14 @@ max_tokens = int(os.getenv("LLM_MAX_TOKENS", "300"))
 if not model_name.startswith("google/"):
     model_name = f"google/{model_name}"
 
-print("\n=================== SYSTEM ENVIRONMENT DEBUG ===================")
-if openrouter_key:
-    print(f"✅ SUCCESS: OPENROUTER_API_KEY Loaded!")
-    print(f"🤖 API CLIENT: Routing Gemini via OpenRouter.")
-else:
-    print("❌ ERROR: OPENROUTER_API_KEY is missing from .env!")
-print(f"🎯 Target Model: {model_name}")
-print("================================================================\n")
+# print("\n=================== SYSTEM ENVIRONMENT DEBUG ===================")
+# if openrouter_key:
+#     print(f"✅ SUCCESS: OPENROUTER_API_KEY Loaded!")
+#     print(f"🤖 API CLIENT: Routing Gemini via OpenRouter.")
+# else:
+#     print("❌ ERROR: OPENROUTER_API_KEY is missing from .env!")
+# print(f"🎯 Target Model: {model_name}")
+# print("================================================================\n")
 
 # Initialize OpenRouter Client
 client = OpenAI(
