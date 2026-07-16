@@ -1,0 +1,27 @@
+<div class="floating-tts-container">
+
+  <div class="tts-tooltip" *ngIf="isTtsEnabled && statusMessage">
+    {{ statusMessage }}
+  </div>
+
+  <div class="language-popover" *ngIf="isTtsEnabled">
+    <button class="lang-btn" [class.active]="selectedLanguage === 'eng'" (click)="setLanguage('eng')">
+      🇬🇧 <span class="lang-text">English</span>
+    </button>
+    <button class="lang-btn" [class.active]="selectedLanguage === 'fra'" (click)="setLanguage('fra')">
+      🇫🇷 <span class="lang-text">Français</span>
+    </button>
+    <button class="lang-btn" [class.active]="selectedLanguage === 'mfe'" (click)="setLanguage('mfe')">
+      🇲🇺 <span class="lang-text">Kreol</span>
+    </button>
+  </div>
+
+  <button class="mic-fab"
+          [class.enabled]="isTtsEnabled"
+          [class.disabled]="!isTtsEnabled"
+          (click)="toggleTts()"
+          [title]="isTtsEnabled ? 'Disable TTS' : 'Enable TTS'">
+    <span class="mic-icon">{{ isTtsEnabled ? '🎤' : '🔇' }}</span>
+  </button>
+
+</div>
