@@ -36,6 +36,10 @@ body{
 
     overflow-x:hidden;
 
+    position:relative;
+
+    background:#F8FAFC;
+
 }
 
 @keyframes gradientAnimation{
@@ -55,6 +59,111 @@ body{
     100%{
 
         background-position:0% 50%;
+
+    }
+
+    
+
+}
+
+/* =====================================
+   Animated Background
+===================================== */
+
+body::before,
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    opacity:.18;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+/* Blue + Green */
+
+body::before{
+
+    background:
+        radial-gradient(circle,
+            rgba(0,86,166,.45) 0%,
+            rgba(46,125,50,.25) 60%,
+            transparent 80%);
+
+    top:-250px;
+
+    left:-250px;
+
+    animation:moveOne 22s ease-in-out infinite alternate;
+
+}
+
+/* Red + Yellow */
+
+body::after{
+
+    background:
+        radial-gradient(circle,
+            rgba(204,0,0,.25) 0%,
+            rgba(255,193,7,.30) 60%,
+            transparent 80%);
+
+    bottom:-250px;
+
+    right:-250px;
+
+    animation:moveTwo 28s ease-in-out infinite alternate;
+
+}
+
+@keyframes moveOne{
+
+    0%{
+
+        transform:
+            translate(0,0)
+            scale(1);
+
+    }
+
+    100%{
+
+        transform:
+            translate(150px,120px)
+            scale(1.15);
+
+    }
+
+}
+
+@keyframes moveTwo{
+
+    0%{
+
+        transform:
+            translate(0,0)
+            scale(1);
+
+    }
+
+    100%{
+
+        transform:
+            translate(-180px,-100px)
+            scale(1.2);
 
     }
 
