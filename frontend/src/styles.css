@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body{
+
+    margin:0;
+    padding:0;
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100%;
+
+    background:linear-gradient(
+        135deg,
+        #F7F9FC,
+        #EEF4FA,
+        #FFFFFF,
+        #F3F6F9
+    );
+
+    background-size:400% 400%;
+
+    animation:gradientAnimation 18s ease infinite;
+
+    color:#1F2937;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+@keyframes gradientAnimation{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
