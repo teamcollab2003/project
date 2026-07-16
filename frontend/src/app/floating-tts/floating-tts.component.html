@@ -4,15 +4,15 @@
     {{ statusMessage }}
   </div>
 
-  <div class="language-popover">
+ <div class="language-popover" *ngIf="isTtsEnabled">
     <button class="lang-btn" [class.active]="selectedLanguage === 'eng'" (click)="setLanguage('eng')">
-      🇬🇧 <span class="lang-text">English</span>
+      <span class="lang-text">English</span>
     </button>
     <button class="lang-btn" [class.active]="selectedLanguage === 'fra'" (click)="setLanguage('fra')">
-      🇫🇷 <span class="lang-text">Français</span>
+      <span class="lang-text">Français</span>
     </button>
     <button class="lang-btn" [class.active]="selectedLanguage === 'mfe'" (click)="setLanguage('mfe')">
-      🇲🇺 <span class="lang-text">Kreol</span>
+      <span class="lang-text">Kreol</span>
     </button>
   </div>
 

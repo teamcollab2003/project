@@ -1,0 +1,792 @@
+{
+    "taxes": {
+        "income_tax": [
+            {
+                "description": "Income tax exemption of 4 years will be granted to a qualifying expatriate employee of a company engaged in the manufacturing of solar photovoltaic systems."
+            },
+            {
+                "description": "The exemption threshold on lump sum received as pension, retiring allowance or severance allowance will be raised from Rs 3 million to Rs 3.5 million."
+            },
+            {
+                "description": "Disturbance allowance payable to public officers serving in Rodrigues or the Outer Islands will be exempted from tax."
+            },
+            {
+                "description": "The commencement date of the tax exemption granted under the Investment Certificate issued by the EDB will be the date of start of operations instead of the date of incorporation."
+            },
+            {
+                "description": "The reduced corporate tax rate of 3% applicable on profits derived from exports of goods will not apply where such profits are derived from exports of live animals."
+            },
+            {
+                "description": "The 10-year tax holiday granted to captive insurance companies will be extended for another 5 years for captives issued with a licence prior to 19 June 2026."
+            },
+            {
+                "description": "Definition of Global Business Entity excludes a trust or foundation where the settlor, founder, or beneficiaries are residents."
+            },
+            {
+                "description": "For Fair Share Contribution, the requirement for a company to have supplies exceeding Rs 24 million or be VAT registered will no longer apply, but chargeable income exceeding Rs 24 million criterion continues."
+            },
+            {
+                "description": "A non-resident company engaged in the supply of software, licences, applications, maintenance services, and distance maintenance of ICT equipment will be subject to income tax in Mauritius."
+            },
+            {
+                "description": "Partial Exemption Regime core income generating activities for Investment Adviser or Asset Manager broadened to include management of non-securities instruments like loan receivables, mortgage-backed exposures, and invoice financing."
+            },
+            {
+                "description": "Investment tax credit of 15 percent over 3 years (45% total) granted to a manufacturing company for plant, machinery (excluding cars), AI solutions, and patents is extended for another 3 years up to 30 June 2029. Unrelieved credit can be carried forward 10 years."
+            },
+            {
+                "description": "Qualified Domestic Minimum Top-Up Tax (QDMTT): Investment funds and real estate investment vehicles exempted if they are the parent entity of an MNE (effective 01 July 2025). Consolidated adjustments allowed. Fiscal year aligned with ultimate parent. Submission date 15 months from fiscal year end. Amendment allowed within 3 years. Penalty for non-payment reduced from 5% to 2.5%."
+            },
+            {
+                "description": "Annual allowance for capital expenditure on hotels reduced from 30% to 15%."
+            },
+            {
+                "description": "Corporate Climate Responsibility Levy: Offsetting unused tax credits not allowed. Levy payable quarterly under Advance Payment System (25% in FY 26/27, 50% in FY 27/28, 75% in FY 28/29, full APS in FY 29/30)."
+            },
+            {
+                "description": "Removal of 150% deduction on hotel cleaning/renovation and double deduction on Joint Tertiary Education contract with African Universities as from 01 July 2026."
+            },
+            {
+                "description": "Corporate Social Responsibility (CSR) Fund: Corporates can spend up to 25% and remit at least 75% to the National Social Inclusion Foundation, changing from a maximum of 50%."
+            }
+        ],
+        "customs_duty": [
+            {
+                "description": "15% customs duty on quartz slabs used as countertop abolished with effect from 20 June 2026."
+            },
+            {
+                "description": "Exemption on goods imported in semi-knocked down condition resulting in 20% value-addition abolished."
+            },
+            {
+                "description": "Manufacturer of alcoholic products exempted from customs duty on imported wine used as input in excisable goods production."
+            }
+        ],
+        "excise_duty": {
+            "alcoholic_products_increases": [
+                {
+                    "product": "Rum (per litre of absolute alcohol)",
+                    "current_rate": "Rs 796.50",
+                    "new_rate": "Rs 876.15"
+                },
+                {
+                    "product": "Liqueur (per litre of absolute alcohol)",
+                    "current_rate": "Rs 541.20",
+                    "new_rate": "Rs 876.15"
+                },
+                {
+                    "product": "Cane spirits (per litre of absolute alcohol)",
+                    "current_rate": "Rs 796.50",
+                    "new_rate": "Rs 876.15"
+                },
+                {
+                    "product": "Whisky - In bulk for bottling purposes (per litre of absolute alcohol)",
+                    "current_rate": "Rs 1,538.65",
+                    "new_rate": "Rs 1,692.50"
+                },
+                {
+                    "product": "Whisky - In bottle (per litre of absolute alcohol)",
+                    "current_rate": "Rs 2,459.70",
+                    "new_rate": "Rs 2,705.70"
+                }
+            ],
+            "tobacco_products_increases": [
+                {
+                    "product": "Cigars (per kg)",
+                    "current_rate": "Rs 25,861",
+                    "new_rate": "Rs 28,447"
+                },
+                {
+                    "product": "Cigarillos (per thousand)",
+                    "current_rate": "Rs 15,101",
+                    "new_rate": "Rs 16,611"
+                },
+                {
+                    "product": "Cigarettes (per thousand)",
+                    "current_rate": "Rs 7,488",
+                    "new_rate": "Rs 8,237"
+                }
+            ],
+            "plastic_and_sugar": [
+                {
+                    "description": "Excise duty of Rs 2 on PET bottles extended to cover all plastic bottles with effect from 01 October 2026."
+                },
+                {
+                    "description": "Excise duty on sugar sweetened products increased from 12 cents to 15 cents per gramme of sugar from 20 June 2026."
+                },
+                {
+                    "description": "Sugar excise duty extended to sweets, fruit jellies, jams, crystallised fruits, biscuits, waffles, wafers and chewing gums from 01 October 2026."
+                },
+                {
+                    "description": "Small quantities of sugar sweetened products for personal use (gifts/luggage) exempted."
+                }
+            ],
+            "motor_vehicles": [
+                {
+                    "description": "Excise duty exemption on motor vehicle granted to parent or legal guardian of a disabled person aged 18+ receiving a permanent carer's allowance."
+                }
+            ]
+        },
+        "value_added_tax": [
+            {
+                "description": "Services by an FSC management licence holder to GBLs, trusts, or foundations (where majority beneficiaries/settlors are non-residents) made VAT exempt instead of zero-rated."
+            },
+            {
+                "description": "Payment services provided to GBLs by BOM payment service providers made zero-rated."
+            },
+            {
+                "description": "Foreign suppliers of digital/electronic services (including online marketplaces) not required to register if exclusively supplying VAT-registered persons (reverse charge applies), no tax representative required, turnover below Rs 3m exempt, and confidentiality waivers removed."
+            },
+            {
+                "description": "Electronic books exempted from VAT."
+            },
+            {
+                "description": "Hotels/tourist residences must remit 50% VAT in foreign currency."
+            },
+            {
+                "description": "NGOs receiving funding from NSIF Instrument 1 exempted from VAT on donations from abroad."
+            },
+            {
+                "description": "VAT exemption on accommodation extended to international sports events and television/cinema awards."
+            },
+            {
+                "description": "Common salt made zero-rated irrespective of origin."
+            },
+            {
+                "description": "Postal services made zero-rated instead of exempt."
+            },
+            {
+                "description": "Photovoltaic systems and components (generators, panels, batteries, inverters) not subjected to VAT."
+            },
+            {
+                "description": "VAT exemption on entrance fees for any sport discipline under a National Sports Federation."
+            },
+            {
+                "description": "VAT ruling fees increased from Rs 3,000 to Rs 5,000 for individuals, and Rs 15,000 to Rs 75,000 for others (companies, trusts)."
+            }
+        ],
+        "property_and_other_taxes": [
+            {
+                "description": "Transfer of property by NHDC or NSLD to 'syndicats de copropriétaires' exempted from Registration Duty, Land Transfer Tax, and Tax on Transfer of Leasehold Rights."
+            },
+            {
+                "description": "Special duty on memorandum of inventory of assets increased from Rs 200 to Rs 500."
+            },
+            {
+                "description": "Search fees on immovable property database increased from Rs 200 to Rs 300 (daily) and Rs 2,000 to Rs 5,000 (monthly)."
+            },
+            {
+                "description": "Fixed duty on registration of land surveyor reports charged on each lot."
+            },
+            {
+                "description": "Processing fee of Rs 150 per Simplified Customs Assessment Form introduced from 01 September 2026."
+            }
+        ],
+        "tax_administration": [
+            {
+                "description": "MRA empowered to raise assessments beyond statutory limit for fraud/wilful neglect. Stay of assessment covers non-remission of Tourist Fee. Time limit for assessment increased from 1 to 2 years after proceedings conclude."
+            },
+            {
+                "description": "Compliance Agreements introduced for early resolution of tax matters; waives right to object/appeal."
+            },
+            {
+                "description": "Director's liability restricted to executive management positions."
+            },
+            {
+                "description": "TDS expanded: 1% on software/licences single contracts >Rs 300,000; 5% on advertising/social media influencers."
+            },
+            {
+                "description": "Utility transactions >Rs 100k and insured vehicles >Rs 2m must be reported annually to MRA."
+            },
+            {
+                "description": "MRA allowed to collect data for OECD Crypto-Asset Reporting Framework."
+            },
+            {
+                "description": "Tax Residence Certificate fees increased (CIS: $1k to $2k, Individuals: Rs 1k to Rs 2k, Others: $200 to $500)."
+            },
+            {
+                "description": "VAT time of supply deemed 3 months after delivery if no invoice/payment. Unclaimed input VAT credit time limit reduced from 36 to 24 months."
+            },
+            {
+                "description": "Failure to issue fiscal invoice penalized Rs 5,000/day capped at Rs 1,000,000. Failure to use e-invoicing fined up to Rs 500,000 and 2 years imprisonment."
+            },
+            {
+                "description": "Goods cleared at customs only upon full payment. Declarations of source of funds for imports >Rs 500,000 required on risk basis."
+            },
+            {
+                "description": "Passenger currency/jewellery >Rs 500k must be declared; fine up to Rs 5 million for false declaration. Customs detention max 24 hours."
+            },
+            {
+                "description": "Customs penalties increased based on goods value (up to 3x duty/taxes). Electronic seal fee Rs 150 to Rs 350."
+            }
+        ]
+    },
+    "salary_allowance_tables": {
+        "motor_vehicle_registration_marks_annual_fees": [
+            {
+                "registration_mark": "Old Registration Mark - Any number between 1 and 10,000 (i) Only 1 Number",
+                "annual_fee_rs": 10000
+            },
+            {
+                "registration_mark": "Old Registration Mark - Any number between 10 and 10,000",
+                "annual_fee_rs": 5000
+            },
+            {
+                "registration_mark": "Old Registration Mark - 1 letter followed by number between 1 and 9999",
+                "annual_fee_rs": 2000
+            },
+            {
+                "registration_mark": "Old Registration Mark - 2 letters followed by number between 1 and 9999",
+                "annual_fee_rs": 3000
+            },
+            {
+                "registration_mark": "Personalised - 3 letters followed by any number between 1 and 9999",
+                "annual_fee_rs": 5000
+            },
+            {
+                "registration_mark": "Personalised - 4 letters followed by any number between 1 and 9999",
+                "annual_fee_rs": 7500
+            },
+            {
+                "registration_mark": "Personalised - 5 letters followed by any number between 1 and 9999",
+                "annual_fee_rs": 10000
+            },
+            {
+                "registration_mark": "Personalised - 6 letters followed by any number between 1 and 999",
+                "annual_fee_rs": 12500
+            },
+            {
+                "registration_mark": "Personalised - 7 letters followed by any number between 1 and 99",
+                "annual_fee_rs": 15000
+            },
+            {
+                "registration_mark": "Personalised - 8 letters followed by any number between 1 and 9",
+                "annual_fee_rs": 17500
+            },
+            {
+                "registration_mark": "Personalised - Grouping of alphabets up to 9 letters",
+                "annual_fee_rs": 25000
+            }
+        ]
+    },
+    "social_benefits": {
+        "income_support": [
+            {
+                "description": "Monthly income support payable to persons having reached 60 years but not eligible for basic retirement pension increased from Rs 10,000 to Rs 10,370, effective 01 January 2026."
+            }
+        ],
+        "social_register_of_mauritius_srm_thresholds": [
+            {
+                "category": "An Adult",
+                "current_threshold_rs": 3575,
+                "new_threshold_july_2026_rs": 4000,
+                "new_threshold_july_2027_rs": 4250
+            },
+            {
+                "category": "A Child",
+                "current_threshold_rs": 2500,
+                "new_threshold_july_2026_rs": 2800,
+                "new_threshold_july_2027_rs": 3000
+            },
+            {
+                "category": "Household (maximum household income)",
+                "current_threshold_rs": 14650,
+                "new_threshold_july_2026_rs": 16400,
+                "new_threshold_july_2027_rs": 17500
+            }
+        ],
+        "pension_reforms": {
+            "overview": [
+                {
+                    "description": "State Age Pension (SAP) replaces Basic Retirement Pension (BRP) on 01 January 2027."
+                },
+                {
+                    "description": "CSG retirement benefit of Rs 1,000 at age 65 and Rs 1,500 at age 75 subsumed into SAP."
+                },
+                {
+                    "description": "Gradual increase in BRP eligibility age from 60 to 65 discontinued from 31 December 2026."
+                },
+                {
+                    "description": "SAP eligibility age is flexible from 60 to 70. Opting before 65 reduces SAP by 0.5% per month (6% per year). Postponing beyond 65 increases SAP by 0.75% per month (9% per year)."
+                },
+                {
+                    "description": "SAP bonus paid in December. Increases at ages 75 (Rs 1,500), 90 (Rs 7,995), and 100 (Rs 5,185)."
+                },
+                {
+                    "description": "Residency criteria updated: 15 years in aggregate since age 40, with 3 years immediately before claim."
+                }
+            ],
+            "tables": {
+                "sap_base_amounts": [
+                    {
+                        "age_band": "60-64",
+                        "amount_brp_rs": 15555,
+                        "csg_retirement_benefit_rs": 0,
+                        "sap_rs": 15555
+                    },
+                    {
+                        "age_band": "65-74",
+                        "amount_brp_rs": 15555,
+                        "csg_retirement_benefit_rs": 1000,
+                        "sap_rs": 16555
+                    },
+                    {
+                        "age_band": "75-89",
+                        "amount_brp_rs": 15555,
+                        "csg_retirement_benefit_rs": 2500,
+                        "sap_rs": 18055
+                    },
+                    {
+                        "age_band": "90-99",
+                        "amount_brp_rs": 23550,
+                        "csg_retirement_benefit_rs": 2500,
+                        "sap_rs": 26050
+                    },
+                    {
+                        "age_band": "100 and above",
+                        "amount_brp_rs": 28735,
+                        "csg_retirement_benefit_rs": 2500,
+                        "sap_rs": 31235
+                    }
+                ],
+                "adjusted_sap_amounts": [
+                    {
+                        "age_of_election": 60,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": -4967,
+                        "adjusted_sap_rs": 11589
+                    },
+                    {
+                        "age_of_election": 61,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": -3973,
+                        "adjusted_sap_rs": 12582
+                    },
+                    {
+                        "age_of_election": 62,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": -2980,
+                        "adjusted_sap_rs": 13575
+                    },
+                    {
+                        "age_of_election": 63,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": -1987,
+                        "adjusted_sap_rs": 14568
+                    },
+                    {
+                        "age_of_election": 64,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": -993,
+                        "adjusted_sap_rs": 15562
+                    },
+                    {
+                        "age_of_election": 65,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": 0,
+                        "adjusted_sap_rs": 16555
+                    },
+                    {
+                        "age_of_election": 66,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": 1490,
+                        "adjusted_sap_rs": 18045
+                    },
+                    {
+                        "age_of_election": 67,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": 2980,
+                        "adjusted_sap_rs": 19535
+                    },
+                    {
+                        "age_of_election": 68,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": 4470,
+                        "adjusted_sap_rs": 21025
+                    },
+                    {
+                        "age_of_election": 69,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": 5960,
+                        "adjusted_sap_rs": 22515
+                    },
+                    {
+                        "age_of_election": 70,
+                        "standard_sap_at_65_rs": 16555,
+                        "reduction_increase_in_sap_rs": 7450,
+                        "adjusted_sap_rs": 24005
+                    }
+                ],
+                "sap_transitional_amounts": [
+                    {
+                        "reach_60_in": "Sept-26",
+                        "pension_age_in": "Sept-28",
+                        "months_to_reach_pension_age": 20,
+                        "adjusted_sap_at_60": 14000,
+                        "adjusted_sap_at_61": 14933
+                    },
+                    {
+                        "reach_60_in": "Oct-26",
+                        "pension_age_in": "Oct-28",
+                        "months_to_reach_pension_age": 21,
+                        "adjusted_sap_at_60": 13922,
+                        "adjusted_sap_at_61": 14855
+                    },
+                    {
+                        "reach_60_in": "Nov-26",
+                        "pension_age_in": "Nov-28",
+                        "months_to_reach_pension_age": 22,
+                        "adjusted_sap_at_60": 13844,
+                        "adjusted_sap_at_61": 14777
+                    },
+                    {
+                        "reach_60_in": "Dec-26",
+                        "pension_age_in": "Dec-28",
+                        "months_to_reach_pension_age": 23,
+                        "adjusted_sap_at_60": 13766,
+                        "adjusted_sap_at_61": 14699
+                    },
+                    {
+                        "reach_60_in": "Jan-27",
+                        "pension_age_in": "Jan-29",
+                        "months_to_reach_pension_age": 24,
+                        "adjusted_sap_at_60": 13688,
+                        "adjusted_sap_at_61": 14622
+                    },
+                    {
+                        "reach_60_in": "Jan-28",
+                        "pension_age_in": "Jan-31",
+                        "months_to_reach_pension_age": 36,
+                        "adjusted_sap_at_60": 12755,
+                        "adjusted_sap_at_61": 13688,
+                        "adjusted_sap_at_62": 14622
+                    },
+                    {
+                        "reach_60_in": "Jan-29",
+                        "pension_age_in": "Jan-33",
+                        "months_to_reach_pension_age": 48,
+                        "adjusted_sap_at_60": 11822,
+                        "adjusted_sap_at_61": 12755,
+                        "adjusted_sap_at_62": 13688,
+                        "adjusted_sap_at_63": 14622
+                    },
+                    {
+                        "reach_60_in": "Aug-29",
+                        "pension_age_in": "Aug-33",
+                        "months_to_reach_pension_age": 48,
+                        "adjusted_sap_at_60": 11822,
+                        "adjusted_sap_at_61": 12755,
+                        "adjusted_sap_at_62": 13688,
+                        "adjusted_sap_at_63": 14622
+                    },
+                    {
+                        "reach_60_in": "Jan-30",
+                        "pension_age_in": "Jan-35",
+                        "months_to_reach_pension_age": 60,
+                        "adjusted_sap_at_60": 11589,
+                        "adjusted_sap_at_61": 12582,
+                        "adjusted_sap_at_62": 13575,
+                        "adjusted_sap_at_63": 14568,
+                        "adjusted_sap_at_64": 15562
+                    }
+                ],
+                "means_test_beneficiary_below_65": [
+                    {
+                        "monthly_income_rs": 0,
+                        "adjusted_sap_rs": 15555,
+                        "income_plus_sap_rs": 15555
+                    },
+                    {
+                        "monthly_income_rs": 14000,
+                        "adjusted_sap_rs": 15555,
+                        "income_plus_sap_rs": 29555
+                    },
+                    {
+                        "monthly_income_rs": 15000,
+                        "adjusted_sap_rs": 15055,
+                        "income_plus_sap_rs": 30055
+                    },
+                    {
+                        "monthly_income_rs": 40000,
+                        "adjusted_sap_rs": 2555,
+                        "income_plus_sap_rs": 42555
+                    },
+                    {
+                        "monthly_income_rs": 43110,
+                        "adjusted_sap_rs": 1000,
+                        "income_plus_sap_rs": 44110
+                    },
+                    {
+                        "monthly_income_rs": 50000,
+                        "adjusted_sap_rs": 1000,
+                        "income_plus_sap_rs": 51000
+                    }
+                ],
+                "means_test_beneficiary_65_and_above": [
+                    {
+                        "monthly_income_rs": 0,
+                        "adjusted_sap_rs": 16555,
+                        "income_plus_sap_rs": 16555
+                    },
+                    {
+                        "monthly_income_rs": 14000,
+                        "adjusted_sap_rs": 16555,
+                        "income_plus_sap_rs": 30555
+                    },
+                    {
+                        "monthly_income_rs": 15000,
+                        "adjusted_sap_rs": 16055,
+                        "income_plus_sap_rs": 31055
+                    },
+                    {
+                        "monthly_income_rs": 45110,
+                        "adjusted_sap_rs": 1000,
+                        "income_plus_sap_rs": 46110
+                    },
+                    {
+                        "monthly_income_rs": 50000,
+                        "adjusted_sap_rs": 1000,
+                        "income_plus_sap_rs": 51000
+                    }
+                ],
+                "means_test_couple_below_65_same_income": [
+                    {
+                        "monthly_income_each_rs": 0,
+                        "sap_payable_each_rs": 15555
+                    },
+                    {
+                        "monthly_income_each_rs": 10000,
+                        "sap_payable_each_rs": 11666
+                    },
+                    {
+                        "monthly_income_each_rs": 40000,
+                        "sap_payable_each_rs": 1916
+                    },
+                    {
+                        "monthly_income_each_rs": 50000,
+                        "sap_payable_each_rs": 1000
+                    }
+                ],
+                "means_test_couple_above_65_same_income": [
+                    {
+                        "monthly_income_each_rs": 0,
+                        "sap_payable_each_rs": 16555
+                    },
+                    {
+                        "monthly_income_each_rs": 10000,
+                        "sap_payable_each_rs": 12416
+                    },
+                    {
+                        "monthly_income_each_rs": 40000,
+                        "sap_payable_each_rs": 2666
+                    },
+                    {
+                        "monthly_income_each_rs": 50000,
+                        "sap_payable_each_rs": 0
+                    }
+                ]
+            }
+        }
+    },
+    "policies": {
+        "ease_of_doing_business": [
+            {
+                "description": "Golden Visa Scheme: Minimum investment USD 1 million in high value sectors. Enhancements include eligibility for Permanent Residence Permit upon investment and work permits for domestic workers processed in 5 days."
+            },
+            {
+                "description": "Special Economic Zone (SEZ) at Côte d’Or: 100% foreign-ownership allowed, special Data Centre Electricity Tariff, tax reliefs, fast-track permits, concessionary rental rate of 40% market rate for 10 years, and 30-year renewable leases."
+            }
+        ],
+        "healthcare": [
+            {
+                "description": "Health Efficiency and Effectiveness Committee instituted to eliminate waste and secure better value for money."
+            },
+            {
+                "description": "Clinical Trial Act amended to streamline clinical research and promote trials."
+            },
+            {
+                "description": "Holistic National Geriatric Programme implemented."
+            },
+            {
+                "description": "Private Health Institutions and Residential Care Homes frameworks amended for pre-application Letters of Intent."
+            }
+        ],
+        "public_financial_management": [
+            {
+                "description": "Performance-Based Budgeting Estimates document to include outcome and KPIs for Programs starting FY 2026-2027."
+            },
+            {
+                "description": "Consolidated Financial Statements for Public Sector prepared in compliance with IPSAS."
+            },
+            {
+                "description": "State-Owned Enterprises (SOEs) Health Check Framework implemented."
+            },
+            {
+                "description": "Public Expenditure and Financial Accountability assessment (PEFA) to be carried out by EU."
+            },
+            {
+                "description": "Public debt management: Introduction of 25-year and 30-year Government of Mauritius Bonds, direct retail participation in auctions >20 years, improved SDDS Plus reporting."
+            }
+        ],
+        "transport": [
+            {
+                "description": "Legal operating age of buses reduced from 21 to 16 years over 5 years."
+            },
+            {
+                "description": "Integrated cashless ticketing system for bus and metro networks."
+            },
+            {
+                "description": "Online taxi booking platforms regulated."
+            },
+            {
+                "description": "Vehicle ownership transfer simplified with Unique Identification Number (UIN) and online verification of liens."
+            }
+        ],
+        "other_initiatives": [
+            {
+                "description": "Free monthly data package for youth (18-25 years) extended to 30 June 2027."
+            },
+            {
+                "description": "Menstrual leave introduced: one paid day per month for severe symptoms."
+            },
+            {
+                "description": "Low Earth Orbit (LEO) Satellite project implemented for high-speed connectivity and climate monitoring."
+            },
+            {
+                "description": "Free access to selected regional sports facilities."
+            },
+            {
+                "description": "Fine for noise nuisance increased from Rs 10,000 to Rs 20,000."
+            },
+            {
+                "description": "SMEs with 'Made in Moris' Certificate get 40% margin of preference on public contracts."
+            }
+        ]
+    },
+    "infrastructure": [
+        {
+            "description": "National Development Unit prioritizes land drainage projects recommended by Land Drainage Authority (LDA)."
+        },
+        {
+            "description": "LDA clearance required before roadworks impacting drainage corridors."
+        }
+    ],
+    "legislative_amendments": [
+        {
+            "act": "Academy of Design and Innovation Act",
+            "amendments": [
+                "Provides for the election of a Chairperson in absence at meetings."
+            ]
+        },
+        {
+            "act": "Bank of Mauritius Act",
+            "amendments": [
+                "Allows Government to inject funds to increase paid-up capital.",
+                "Upgrades qualification requirements for Chairperson of Banking Services Review Panel."
+            ]
+        },
+        {
+            "act": "Banking Act",
+            "amendments": [
+                "Duty of confidentiality waived for Financial Crimes Commission Act (FCC) and UN Sanctions Act investigations.",
+                "FCC can obtain information without bank officers attending court."
+            ]
+        },
+        {
+            "act": "Captive Insurance Act",
+            "amendments": [
+                "Allows FSC to extend time limits for regulatory filing requirements."
+            ]
+        },
+        {
+            "act": "Co-operatives Act",
+            "amendments": [
+                "Defines classes and turnover-based categorization (micro, small, medium, large).",
+                "Expands 'credit union' definition to bring them under AML/CFT compliance."
+            ]
+        },
+        {
+            "act": "Economic Development Board Act",
+            "amendments": [
+                "Integrated Modern Agricultural Morcellement Scheme discontinued.",
+                "Occupation Permit thresholds revised: Investor initial investment USD 100,000; Professional min salary Rs 50,000; New Technical Category introduced; Family OP abolished."
+            ]
+        },
+        {
+            "act": "Environment Act",
+            "amendments": [
+                "Increases fines for illegal dumping, littering, and unauthorized posters. Fixed penalties for creating breeding grounds for pests."
+            ]
+        },
+        {
+            "act": "Financial Intelligence and Anti-Money Laundering Act (FIAMLA)",
+            "amendments": [
+                "Clarifies FSC power to impose administrative sanctions. Excludes third-party administrators from AML/CFT obligations."
+            ]
+        },
+        {
+            "act": "Financial Services Act",
+            "amendments": [
+                "Introduces Private Wealth Management Licence.",
+                "FSC empowered to take action against misleading advertisements.",
+                "Introduces conservatorship framework for licensees in financial difficulty.",
+                "Establishes National Fintech Governance Committee."
+            ]
+        },
+        {
+            "act": "Gambling Regulatory Authority Act",
+            "amendments": [
+                "Hotel casino operations no longer authorized.",
+                "Digital games licensing introduced; mandatory certification required.",
+                "Horse Racing Fund established. Totalisator operators/agents strict rules applied.",
+                "Betting tax on horse racing imposed on total staked less winnings, instead of gross stakes.",
+                "Server connections to MRA Central Electronic Monitoring System mandatory."
+            ]
+        },
+        {
+            "act": "Higher Education Act",
+            "amendments": [
+                "Includes foundation courses as higher education under HEC approval."
+            ]
+        },
+        {
+            "act": "Immigration Act",
+            "amendments": [
+                "Digital Electronic Travel Authorisation introduced. Removes absolute discretion of Minister to deprive non-citizen residency without reason."
+            ]
+        },
+        {
+            "act": "National Pensions Act & Pensions Act",
+            "amendments": [
+                "Introduces defined-contribution National Pensions Fund from 1 July 2027. Employee 1.5% / Employer 7.5% (<Rs50k). CSG and PRGF abolished.",
+                "Child allowance age increased to 21 for full-time secondary students.",
+                "President/Vice President pension reduced by private/state pensions and fully taxable.",
+                "National Assembly members join Defined Contribution Scheme (6% member, 12% Government). Max retiring allowance capped at two-thirds highest salary."
+            ]
+        },
+        {
+            "act": "Public Gatherings Act",
+            "amendments": [
+                "Increases max fine to Rs 100,000 and imprisonment to 5 years for unlawful gatherings."
+            ]
+        },
+        {
+            "act": "Road Traffic Act",
+            "amendments": [
+                "Establishes Traffic Management and Road Safety Unit (TMRSU) as lead agency.",
+                "Safe city cameras can detect speeding/mobile phone use. Impoundment for DUI. Road rage made an offence."
+            ]
+        },
+        {
+            "act": "Virtual Asset and Initial Token Offering Services Act",
+            "amendments": [
+                "Prohibits unlicensed persons from soliciting investors for virtual assets."
+            ]
+        },
+        {
+            "act": "Waqf Act",
+            "amendments": [
+                "Introduces comprehensive AML/CFT oversight framework for waqfs."
+            ]
+        }
+    ]
+}
