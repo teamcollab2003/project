@@ -3,11 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-floating-tts', // 1. Set to 'app-floating-tts' to match her template selector
+  selector: 'app-floating-tts',
   standalone: true,
-  imports: [CommonModule],       // HttpClientModule is handled globally by her app.config.ts, so we can clean this up!
-  templateUrl: './floating-tts.component.html', // 2. Point to her local HTML file
-  styleUrl: './floating-tts.component.css'     // 3. Point to her local CSS file using her modern styleUrl convention
+  imports: [CommonModule],
+  templateUrl: './floating-tts.component.html',
+  styleUrl: './floating-tts.component.css'
 })
 export class FloatingTtsComponent {
   selectedLanguage: 'eng' | 'fra' | 'mfe' = 'eng';
@@ -16,14 +16,15 @@ export class FloatingTtsComponent {
   private currentAudio: HTMLAudioElement | null = null;
   private lastHoveredElement: HTMLElement | null = null;
 
-  constructor(private http: HttpClient) {}
+  // 1. Storage Map to preserve the original English text of your website
+  private originalTexts = new Map<HTMLElement, string>();
 
-  // ... (Keep the rest of your hover and speech code exactly as it is below!)
+  constructor(private http: HttpClient) {}
 
   toggleTts() {
     this.isTtsEnabled = !this.isTtsEnabled;
     if (this.isTtsEnabled) {
-      this.statusMessage = '👉 Choose a language below!';
+      this.statusMessage = '👉 Choose language above!';
     } else {
       this.statusMessage = '';
       this.stopAudio();
@@ -34,9 +35,64 @@ export class FloatingTtsComponent {
     this.selectedLanguage = lang;
     this.statusMessage = `Language: ${lang.toUpperCase()}`;
     this.stopAudio();
+
+    // 2. Trigger global webpage translation!
+    this.translatePage(lang);
   }
 
-  // 1. GLOBAL INTERCEPTOR: Listens to mouseover events on the ENTIRE document
+  // --- DYNAMIC GLOBAL TRANSLATION FUNCTION ---
+  translatePage(targetLang: 'eng' | 'fra' | 'mfe') {
+    this.statusMessage = '🌐 Translating page...';
+
+    // Grab common readable text tags on the current page
+    const elements = Array.from(document.querySelectorAll('p, span, a, h1, h2, h3, h4, h5, h6, li, button, strong, em, td, th')) as HTMLElement[];
+
+    const elementsToTranslate: HTMLElement[] = [];
+    const textsToTranslate: string[] = [];
+
+    elements.forEach(el => {
+      // Ignore text inside our floating translation widget itself
+      if (el.closest('.floating-tts-container')) return;
+
+      const text = el.innerText?.trim();
+      if (!text) return;
+
+      // Keep track of the original English text forever so we can always revert or re-translate cleanly
+      if (!this.originalTexts.has(el)) {
+        this.originalTexts.set(el, text);
+      }
+
+      elementsToTranslate.push(el);
+      textsToTranslate.push(this.originalTexts.get(el)!);
+    });
+
+    if (textsToTranslate.length === 0) {
+      this.statusMessage = '✅ Page is ready!';
+      return;
+    }
+
+    // Send the collected text list to our Python server in one single payload
+    this.http.post<{ translations: string[] }>('http://127.0.0.1:5000/api/translate', {
+      texts: textsToTranslate,
+      target: targetLang
+    }).subscribe({
+      next: (response) => {
+        // Swap out the DOM texts with the translated results on the fly!
+        response.translations.forEach((translatedText, index) => {
+          if (translatedText) {
+            elementsToTranslate[index].innerText = translatedText;
+          }
+        });
+        this.statusMessage = `✅ Switched to ${targetLang.toUpperCase()}`;
+      },
+      error: (err) => {
+        console.error('Translation failed:', err);
+        this.statusMessage = '❌ Translation offline. Run Python server!';
+      }
+    });
+  }
+
+  // --- TEXT TO SPEECH GLOBAL HOVER LISTENER ---
   @HostListener('document:mouseover', ['$event'])
   onDocumentHover(event: MouseEvent) {
     if (!this.isTtsEnabled) return;
@@ -44,26 +100,20 @@ export class FloatingTtsComponent {
     const target = event.target as HTMLElement;
     if (!target) return;
 
-    // RULE A: Ignore hovers that happen inside our floating settings controller
     if (target.closest('.floating-tts-container')) return;
 
-    // RULE B: Only read text elements (paragraphs, links, list items, headings, etc.)
-    // This stops it from reading huge, empty background wrapper divs.
     const readableTags = ['P', 'SPAN', 'A', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'LI', 'BUTTON', 'STRONG', 'EM', 'TD', 'TH'];
     if (!readableTags.includes(target.tagName)) return;
 
-    // RULE C: Don't repeatedly trigger the engine if the mouse moves slightly within the same word
     if (target === this.lastHoveredElement) return;
     this.lastHoveredElement = target;
 
-    // 2. Extract whatever text is physically rendered inside the hovered element
     const textToSpeak = target.innerText || target.textContent;
     if (textToSpeak && textToSpeak.trim().length > 0) {
       this.speakText(textToSpeak.trim());
     }
   }
 
-  // 3. GLOBAL LEAVE EVENT: Stops talking immediately if your mouse leaves an element
   @HostListener('document:mouseout', ['$event'])
   onDocumentMouseOut(event: MouseEvent) {
     const target = event.target as HTMLElement;
@@ -74,7 +124,7 @@ export class FloatingTtsComponent {
   }
 
   private speakText(text: string) {
-    this.stopAudio(); // Instantly kill previous sounds for crisp responsiveness
+    this.stopAudio();
     this.statusMessage = '🔊 Speaking...';
 
     this.http.post('http://127.0.0.1:5000/api/tts',
@@ -84,16 +134,14 @@ export class FloatingTtsComponent {
       next: (audioBlob: Blob) => {
         const audioUrl = URL.createObjectURL(audioBlob);
         this.currentAudio = new Audio(audioUrl);
-
-        this.currentAudio.play()
-          .catch(err => {
-            console.error('Playback blocked:', err);
-            this.statusMessage = '❌ Blocked. Click once on screen!';
-          });
+        this.currentAudio.play().catch(err => {
+          console.error('Audio playback blocked:', err);
+          this.statusMessage = '❌ Click screen once to unlock audio!';
+        });
       },
       error: (err) => {
-        console.error('Error contacting python backend:', err);
-        this.statusMessage = '❌ Local backend offline!';
+        console.error('Error generating offline TTS:', err);
+        this.statusMessage = '❌ TTS Offline!';
       }
     });
   }

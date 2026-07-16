@@ -4,12 +4,46 @@ import uuid
 import pyttsx3
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
+from deep_translator import GoogleTranslator
 
 app = Flask(__name__)
 CORS(app)
 
 # We will save the unique files in the same directory as this script
 BASE_DIR = os.path.dirname(__file__)
+
+# --- 2. ADD THIS NEW TRANSLATION API ROUTE ---
+@app.route('/api/translate', methods=['POST'])
+def translate_text():
+    data = request.json
+    texts = data.get('texts', [])
+    target_lang = data.get('target', 'eng')
+    
+    if not texts:
+        return jsonify({"translations": []})
+        
+    # Map Angular language codes to Google Translate's official ISO codes
+    lang_mapping = {
+        'eng': 'en',
+        'fra': 'fr',
+        'mfe': 'mfe' # Mauritian Creole is officially 'mfe'
+    }
+    
+    google_target = lang_mapping.get(target_lang, 'en')
+    
+    try:
+        print(f"🌐 Batch Translating {len(texts)} elements to {google_target.upper()}...")
+        
+        # Initialize the translator
+        translator = GoogleTranslator(source='auto', target=google_target)
+        
+        # Translate the entire array of strings in one single batch!
+        translations = translator.translate_batch(texts)
+        
+        return jsonify({"translations": translations})
+    except Exception as e:
+        print("❌ Translation Server Error:", str(e))
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/api/tts', methods=['POST'])
 def text_to_speech():

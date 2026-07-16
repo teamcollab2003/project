@@ -4,7 +4,7 @@
     {{ statusMessage }}
   </div>
 
-  <div class="language-popover" *ngIf="isTtsEnabled">
+  <div class="language-popover">
     <button class="lang-btn" [class.active]="selectedLanguage === 'eng'" (click)="setLanguage('eng')">
       🇬🇧 <span class="lang-text">English</span>
     </button>
