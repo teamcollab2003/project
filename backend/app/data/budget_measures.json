@@ -1,0 +1,27 @@
+{
+  "student": {
+    "key_measures": [
+      "Champion of AI Programme launched to prepare students for the AI economy.",
+      "Special schemes supporting tech startups, digital skills development, and innovation platforms."
+    ]
+  },
+  "worker": {
+    "key_measures": [
+      "Extension of maternity leave to 1 year (first 6 months fully paid, remaining 6 months half-pay).",
+      "Paternity leave increased from 4 weeks to 6 weeks.",
+      "Introduction of 1 paid day of menstrual leave per month for women experiencing severe symptoms."
+    ]
+  },
+  "senior": {
+    "key_measures": [
+      "State Age Pension (SAP) reforms restoration electively from age 60, with full SAP applied for monthly income below Rs 14,000."
+    ]
+  },
+  "sme": {
+    "key_measures": [
+      "Tax holidays for startups and support for business AI/digital integration.",
+      "Launch of a Golden Visa scheme for tech, AI, and biotechnology investments.",
+      "SME facilitation and streamlined licensing processes under the forthcoming Business Facilitation Bill."
+    ]
+  }
+}

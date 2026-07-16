@@ -6,3 +6,19 @@
 .transition-hover:hover {
   transform: translateY(-4px);
 }
+
+.fade-in {
+  animation: fadeInEffect 0.4s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

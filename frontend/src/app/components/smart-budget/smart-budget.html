@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <!-- Dynamic Form -->
+  <!-- Dynamic Form & Results Container -->
   <div class="card shadow-sm border-0 bg-body-tertiary">
     <div class="card-body p-4">
       <form (ngSubmit)="submitForm()">
@@ -268,11 +268,36 @@
         </div>
 
         <hr class="my-4 border-secondary-subtle">
-        <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold shadow">
-          Generate AI Budget Impact
+        
+        <!-- 🚀 CLEAN BUTTON: Disables and displays status text (no lagging spinning wheels) -->
+        <button type="submit" [disabled]="isLoading" class="btn btn-primary btn-lg w-100 fw-bold shadow">
+          {{ isLoading ? 'Analyzing Budget Impact...' : 'Generate AI Budget Impact' }}
         </button>
         
       </form>
+
+      <!-- 🚀 CLEAN DISPLAY AREA: Appends directly below form -->
+      <div class="mt-4 pt-3 border-top border-secondary-subtle" *ngIf="isLoading || aiResponse">
+        
+        <!-- Clean Text-Based Loading State -->
+        <div class="text-center py-4" *ngIf="isLoading">
+          <p class="text-muted fw-semibold mb-0">Smart Budget Moris is calculating your personalized report...</p>
+        </div>
+
+        <!-- Rendered budget analysis report -->
+        <div *ngIf="!isLoading && aiResponse" class="fade-in">
+          <div class="d-flex align-items-center mb-3">
+            <span class="fs-3 me-2">🇲🇺</span>
+            <h4 class="fw-bold text-dark m-0">Your Personalized Budget Report</h4>
+          </div>
+          
+          <!-- Preserves original line breaks, bullet formatting, and structure -->
+          <pre class="bg-white p-4 border border-secondary-subtle rounded-3 text-dark shadow-sm m-0" 
+               style="white-space: pre-wrap; font-family: inherit; line-height: 1.6; font-size: 15px; max-height: 500px; overflow-y: auto;">{{ aiResponse }}</pre>
+        </div>
+
+      </div>
+      
     </div>
   </div>
 </div>
