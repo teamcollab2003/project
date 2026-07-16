@@ -1,0 +1,8 @@
+/* Custom clean hover effect that blends seamlessly with Bootstrap's system */
+.transition-hover {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.transition-hover:hover {
+  transform: translateY(-4px);
+}
