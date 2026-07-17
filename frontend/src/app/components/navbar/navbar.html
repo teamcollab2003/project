@@ -1,6 +1,6 @@
 <nav class="navbar">
 
-    <div class="logo">
+    <div class="logo" (click)="goHome()">
 
         <img src="/images/dodo.jpg" alt="Smart Budget Moris Logo">
 
@@ -16,7 +16,7 @@
 
     <ul class="nav-links">
 
-        <li>🏠 Home</li>
+        <li (click)="goHome()">🏠 Home</li>
 
         <li>📊 Statistics</li>
 

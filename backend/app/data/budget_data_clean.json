@@ -1,0 +1,385 @@
+{
+    "budget_comparison": {
+        "fiscal_year": "2026/2027",
+        "total_revenue_mur_billion": 235.5,
+        "total_expenditure_mur_billion": 266.7,
+        "budget_deficit_mur_billion": 31.2,
+        "budget_deficit_percentage_gdp": 3.7
+    },
+    "government_spending": [
+        {
+            "spending_id": "SP_AI_01",
+            "ministry_or_department": "Technology / Education",
+            "category": "Capital",
+            "allocated_amount_mur_million": 25,
+            "purpose_description": "Establishment of a National AI Learning Platform and an AI Innovation Start-Up Programme."
+        },
+        {
+            "spending_id": "SP_CYBER_01",
+            "ministry_or_department": "Security",
+            "category": "Capital",
+            "allocated_amount_mur_million": 13,
+            "purpose_description": "Cyber Forensic laboratory, national cybersecurity survey, and Information Security Management Systems."
+        },
+        {
+            "spending_id": "SP_WASTE_01",
+            "ministry_or_department": "Environment",
+            "category": "Recurrent",
+            "allocated_amount_mur_million": 150,
+            "purpose_description": "Programme to strengthen national waste management from a circular economy perspective."
+        },
+        {
+            "spending_id": "SP_AGRI_01",
+            "ministry_or_department": "Agriculture",
+            "category": "Recurrent",
+            "allocated_amount_mur_million": 100,
+            "purpose_description": "Yearly provision over the next three years for the rehabilitation of 500 hectares of land owned by small and medium planters."
+        },
+        {
+            "spending_id": "SP_LIVE_01",
+            "ministry_or_department": "Agriculture",
+            "category": "Capital",
+            "allocated_amount_mur_million": 50,
+            "purpose_description": "Construction of a modern, state-of-the-art veterinary hospital."
+        },
+        {
+            "spending_id": "SP_TOUR_01",
+            "ministry_or_department": "Tourism",
+            "category": "Recurrent",
+            "allocated_amount_mur_million": 1000,
+            "purpose_description": "Support tourism policy transformation, including Rs 490 million to the MTPA."
+        },
+        {
+            "spending_id": "SP_ARTS_01",
+            "ministry_or_department": "Arts and Culture",
+            "category": "Capital",
+            "allocated_amount_mur_million": 100,
+            "purpose_description": "Complete rehabilitation of the National History Museum at Mahébourg financed from national lottery proceeds."
+        },
+        {
+            "spending_id": "SP_ARTS_02",
+            "ministry_or_department": "Arts and Culture",
+            "category": "Capital",
+            "allocated_amount_mur_million": 124,
+            "purpose_description": "Upliftment of the Le Morne Cultural Landscape over three financial years."
+        },
+        {
+            "spending_id": "SP_BLUE_01",
+            "ministry_or_department": "Fisheries",
+            "category": "Capital",
+            "allocated_amount_mur_million": 41,
+            "purpose_description": "Immediate construction of 2 new high-capacity hatcheries at the Albion Fisheries Research Centre."
+        },
+        {
+            "spending_id": "SP_SOC_01",
+            "ministry_or_department": "State Trading Corporation",
+            "category": "Recurrent",
+            "allocated_amount_mur_million": 2000,
+            "purpose_description": "Contribution to the Price Stabilisation Fund."
+        },
+        {
+            "spending_id": "SP_WATER_01",
+            "ministry_or_department": "Public Utilities",
+            "category": "Capital",
+            "allocated_amount_mur_million": 6400,
+            "purpose_description": "Over three years to expand the national water catchment capacity and improve the water delivery system."
+        },
+        {
+            "spending_id": "SP_EDU_01",
+            "ministry_or_department": "Ministry of Education and Tertiary Education",
+            "category": "Recurrent",
+            "allocated_amount_mur_million": 2600,
+            "purpose_description": "Combined budget increase for Education and Tertiary Education."
+        },
+        {
+            "spending_id": "SP_EDU_02",
+            "ministry_or_department": "Ministry of Education",
+            "category": "Capital",
+            "allocated_amount_mur_million": 824,
+            "purpose_description": "Improvement and expansion of infrastructure and amenities in schools."
+        },
+        {
+            "spending_id": "SP_HEALTH_01",
+            "ministry_or_department": "Health and Wellness",
+            "category": "Capital",
+            "allocated_amount_mur_million": 1500,
+            "purpose_description": "Modernise and expand healthcare infrastructure, including new SSRN Hospital and AYUSH Centre."
+        },
+        {
+            "spending_id": "SP_HOUSING_01",
+            "ministry_or_department": "Housing",
+            "category": "Capital",
+            "allocated_amount_mur_million": 2000,
+            "purpose_description": "Off-site infrastructure under Phase one of the 8,000 social housing project."
+        },
+        {
+            "spending_id": "SP_ROD_01",
+            "ministry_or_department": "Rodrigues Regional Assembly",
+            "category": "Recurrent",
+            "allocated_amount_mur_million": 5500,
+            "purpose_description": "Recurrent expenditure for the Rodrigues Regional Assembly."
+        }
+    ],
+    "revenue": [
+        {
+            "revenue_id": "REV_CHAGOS",
+            "source_name": "Chagos Archipelago Agreement",
+            "revenue_type": "Grants",
+            "estimated_amount_mur_billion": 10.0
+        },
+        {
+            "revenue_id": "REV_TOTAL_2627",
+            "source_name": "Total Revenue (Inclusive of Chagos)",
+            "revenue_type": "Tax and Non-Tax",
+            "estimated_amount_mur_billion": 235.5
+        }
+    ],
+    "taxes": [
+        {
+            "tax_id": "TAX_EXCISE_TOBACCO",
+            "tax_category": "Excise Duty",
+            "target_item_or_group": "Tobacco products and hard liquor",
+            "previous_rate": "Previous Rate",
+            "new_rate": "Increased by 10%",
+            "effective_date": "2026-06-20"
+        },
+        {
+            "tax_id": "TAX_EXCISE_SUGAR",
+            "tax_category": "Excise Duty",
+            "target_item_or_group": "Sugar content of sugar sweetened products",
+            "previous_rate": "12 cents per gramme",
+            "new_rate": "15 cents per gramme",
+            "effective_date": "2026-06-20"
+        },
+        {
+            "tax_id": "TAX_INSURANCE",
+            "tax_category": "Insurance Premium Tax",
+            "target_item_or_group": "Short-term general insurance",
+            "previous_rate": "0%",
+            "new_rate": "5%",
+            "effective_date": "2027-01-01"
+        },
+        {
+            "tax_id": "TAX_PIT_NEW_BAND",
+            "tax_category": "Income Tax",
+            "target_item_or_group": "Individuals earning > Rs 1 million to Rs 12 million",
+            "previous_rate": "Solidarity levy / Fair share contribution",
+            "new_rate": "20% on > Rs 1m to Rs 12m; 35% on excess of Rs 12m",
+            "effective_date": "2026-07-01"
+        },
+        {
+            "tax_id": "TAX_REG_DUTY_BARE",
+            "tax_category": "Registration Duty",
+            "target_item_or_group": "First-time buyer bare land",
+            "previous_rate": "Exemption on first Rs 2.5 million",
+            "new_rate": "Exemption on first Rs 3 million",
+            "effective_date": "2026-07-01"
+        }
+    ],
+    "economic_indicators": [
+        {
+            "indicator_name": "Unemployment Rate",
+            "unit_of_measurement": "Percentage (%)",
+            "historical_value": 6.0,
+            "current_value": 5.7,
+            "projected_value": 5.7,
+            "reference_year": "2025"
+        },
+        {
+            "indicator_name": "Inflation Rate",
+            "unit_of_measurement": "Percentage (%)",
+            "historical_value": 7.0,
+            "current_value": 3.7,
+            "projected_value": 3.7,
+            "reference_year": "2025"
+        },
+        {
+            "indicator_name": "Gross Official Foreign Currency Reserves",
+            "unit_of_measurement": "USD Billion",
+            "historical_value": 10.3,
+            "current_value": 10.3,
+            "projected_value": 10.3,
+            "reference_year": "2025"
+        },
+        {
+            "indicator_name": "Tourist Arrivals",
+            "unit_of_measurement": "Million",
+            "historical_value": 1.4,
+            "current_value": 1.4,
+            "projected_value": 1.4,
+            "reference_year": "2025"
+        },
+        {
+            "indicator_name": "Tourism Earnings",
+            "unit_of_measurement": "MUR Billion",
+            "historical_value": 103.0,
+            "current_value": 103.0,
+            "projected_value": 103.0,
+            "reference_year": "2025"
+        },
+        {
+            "indicator_name": "Real GDP Growth",
+            "unit_of_measurement": "Percentage (%)",
+            "historical_value": 3.2,
+            "current_value": 3.2,
+            "projected_value": 3.2,
+            "reference_year": "2025"
+        }
+    ],
+    "social_measures": [
+        {
+            "measure_id": "MEASURE_PRICE_SHIELD",
+            "measure_title": "Purchasing Power Shield",
+            "category": "Subsidies",
+            "allocated_budget_mur_million": 2000,
+            "description": "Bulk-purchase of essential consumer goods by STC to lower living costs, alongside a Rs 2 billion contribution to the Price Stabilisation Fund."
+        },
+        {
+            "measure_id": "MEASURE_MATERNITY",
+            "measure_title": "Extension of Maternity Leave",
+            "category": "Healthcare",
+            "allocated_budget_mur_million": 0,
+            "description": "Maternity leave extended to 12 months (first 6 months full salary, remaining 6 months optional half pay)."
+        },
+        {
+            "measure_id": "MEASURE_RETIREMENT_BOND",
+            "measure_title": "Retirement Savings Bond",
+            "category": "Finance",
+            "allocated_budget_mur_million": 0,
+            "description": "Introduction of a Retirement Savings Bond offering up to 6% annual interest for individuals saving for retirement."
+        }
+    ],
+    "beneficiaries": [
+        {
+            "demographic_group": "Elderly (Aged 60+)",
+            "benefit_name": "State Age Pension (SAP)",
+            "eligibility_criteria": "Universal means test individually applied to taxable income above Rs 14,000 threshold. Cut-off amount is Rs 50,000 monthly.",
+            "income_threshold_mur": 14000,
+            "monthly_allowance_mur": 1000
+        },
+        {
+            "demographic_group": "Unemployed Trainees",
+            "benefit_name": "National Skills Development Programme Stipend",
+            "eligibility_criteria": "Unemployed trainees up to Diploma level.",
+            "income_threshold_mur": 0,
+            "monthly_allowance_mur": 10000
+        },
+        {
+            "demographic_group": "Carers",
+            "benefit_name": "Carer’s allowance",
+            "eligibility_criteria": "Individuals registered and acting as carers.",
+            "income_threshold_mur": 0,
+            "monthly_allowance_mur": 4250
+        },
+        {
+            "demographic_group": "Vulnerable Citizens",
+            "benefit_name": "Social Register of Mauritius (SRM) Eligibility",
+            "eligibility_criteria": "Poverty threshold raised.",
+            "income_threshold_mur": 16400,
+            "monthly_allowance_mur": 0
+        }
+    ],
+    "infrastructure_projects": [
+        {
+            "project_name": "Special Economic Zone at Côte d’Or",
+            "sector": "Digital / Tech",
+            "total_estimated_cost_mur_million": 0,
+            "budget_allocation_current_year_mur_million": 0,
+            "status": "In Progress"
+        },
+        {
+            "project_name": "Island Container Terminal Project",
+            "sector": "Transport / Port",
+            "total_estimated_cost_mur_million": 45000,
+            "budget_allocation_current_year_mur_million": 0,
+            "status": "In Progress"
+        },
+        {
+            "project_name": "Rivière des Anguilles Dam",
+            "sector": "Water",
+            "total_estimated_cost_mur_million": 6400,
+            "budget_allocation_current_year_mur_million": 0,
+            "status": "Proposed"
+        },
+        {
+            "project_name": "M4 Motorway",
+            "sector": "Transport",
+            "total_estimated_cost_mur_million": 2000,
+            "budget_allocation_current_year_mur_million": 2000,
+            "status": "Proposed"
+        }
+    ],
+    "debt": {
+        "public_sector_debt_mur_billion": 681.9,
+        "debt_to_gdp_percentage_current": 87.8,
+        "debt_to_gdp_percentage_projected": 85.5,
+        "interest_payments_mur_billion": 26.9,
+        "interest_as_percentage_of_expenditure": 10.7
+    },
+    "employment": [
+        {
+            "metric_name": "Unemployment Rate",
+            "value": 5.7,
+            "unit": "Percentage (%)",
+            "demographic_focus": "Overall"
+        }
+    ],
+    "industry_and_sectoral_policies": [
+        {
+            "sector_name": "Agriculture",
+            "key_initiative": "25by35 Food Security Project",
+            "target_goal": "Produce at least 25% of food requirements locally by 2035.",
+            "budget_allocation_mur_million": 0
+        },
+        {
+            "sector_name": "Blue Economy",
+            "key_initiative": "Fisheries and Aqua-Farming Expansion",
+            "target_goal": "Increase local fish production from 5,000 tons to 15,000 tons over three years.",
+            "budget_allocation_mur_million": 41
+        },
+        {
+            "sector_name": "SMEs / Start-Ups",
+            "key_initiative": "Start-Up Revolution",
+            "target_goal": "Income tax holiday of 10 years for start-ups.",
+            "budget_allocation_mur_million": 0
+        }
+    ],
+    "law_and_order": [
+        {
+            "agency_name": "Mauritius Police Force",
+            "program_name": "Modernise Fleet and Equipment",
+            "allocation_mur_million": 656,
+            "objective": "Acquisition of vehicles and equipment to strengthen operational capacity."
+        },
+        {
+            "agency_name": "National Crime Agency",
+            "program_name": "Establishment of NCA",
+            "allocation_mur_million": 200,
+            "objective": "Consolidate and strengthen investigations into serious fraud, corruption, and transnational crimes."
+        },
+        {
+            "agency_name": "Anti-Drug and Smuggling Unit (ADSU)",
+            "program_name": "Revamping ADSU",
+            "allocation_mur_million": 436,
+            "objective": "Strengthen operational capacity, financial intelligence, and dismantle drug trafficking networks."
+        },
+        {
+            "agency_name": "National Agency for Drug Control (NADC)",
+            "program_name": "Drug Prevention and Early Warning",
+            "allocation_mur_million": 80,
+            "objective": "Nationwide awareness campaign and Early Warning System for psychoactive substances."
+        }
+    ],
+    "environmental_and_climate_resilience": [
+        {
+            "program_name": "Coastal Erosion Adaptation Programme",
+            "environmental_focus": "Coastal Protection",
+            "allocation_mur_million": 4000
+        },
+        {
+            "program_name": "Energy Secure Mauritius",
+            "environmental_focus": "Renewable Energy",
+            "allocation_mur_million": 0
+        }
+    ]
+}
