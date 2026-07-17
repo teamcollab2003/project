@@ -1,0 +1,87 @@
+{
+    "social_welfare": [
+        "social",
+        "welfare",
+        "family",
+        "pension",
+        "retirement",
+        "elderly",
+        "housing",
+        "benefit",
+        "allowance",
+        "disability",
+        "vulnerable",
+        "support",
+        "household"
+    ],
+    "sme": [
+        "business",
+        "enterprise",
+        "enterprises",
+        "sme",
+        "smes",
+        "startup",
+        "start-up",
+        "investment",
+        "innovation",
+        "employment",
+        "entrepreneur",
+        "company"
+    ],
+    "agriculture": [
+        "agriculture",
+        "food",
+        "food security",
+        "farmer",
+        "farmers",
+        "crop",
+        "livestock",
+        "planter"
+    ],
+    "tourism": [
+        "tourism",
+        "hotel",
+        "hospitality",
+        "visitor",
+        "travel",
+        "tourist"
+    ],
+    "infrastructure": [
+        "road",
+        "roads",
+        "bridge",
+        "housing",
+        "construction",
+        "transport",
+        "airport",
+        "port",
+        "water"
+    ],
+    "ict": [
+        "technology",
+        "digital",
+        "ai",
+        "artificial intelligence",
+        "innovation",
+        "cybersecurity",
+        "cyber",
+        "software"
+    ],
+    "health": [
+        "health",
+        "hospital",
+        "clinic",
+        "medical",
+        "medicine",
+        "healthcare"
+    ],
+    "education": [
+        "education",
+        "school",
+        "student",
+        "students",
+        "tertiary",
+        "university",
+        "training"
+    ]
+}

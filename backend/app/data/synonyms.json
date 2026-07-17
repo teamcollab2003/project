@@ -1,0 +1,122 @@
+{
+    "pension": [
+        "retirement",
+        "retiring",
+        "elderly",
+        "senior",
+        "basic retirement pension",
+        "brp",
+        "allowance"
+    ],
+    "social": [
+        "welfare",
+        "benefit",
+        "assistance",
+        "support",
+        "household",
+        "family"
+    ],
+    "business": [
+        "enterprise",
+        "enterprises",
+        "sme",
+        "smes",
+        "startup",
+        "start-up",
+        "company",
+        "companies",
+        "entrepreneur"
+    ],
+    "employment": [
+        "job",
+        "jobs",
+        "worker",
+        "workers",
+        "labour",
+        "workforce",
+        "salary"
+    ],
+    "ai": [
+        "artificial intelligence",
+        "machine learning",
+        "digital",
+        "innovation",
+        "technology"
+    ],
+    "education": [
+        "school",
+        "schools",
+        "student",
+        "students",
+        "tertiary",
+        "university",
+        "training"
+    ],
+    "health": [
+        "hospital",
+        "hospitals",
+        "clinic",
+        "clinics",
+        "medical",
+        "healthcare",
+        "medicine"
+    ],
+    "tax": [
+        "income tax",
+        "corporate tax",
+        "vat",
+        "levy",
+        "duty",
+        "customs",
+        "excise",
+        "csr"
+    ],
+    "housing": [
+        "house",
+        "home",
+        "homes",
+        "residence",
+        "housing assistance"
+    ],
+    "water": [
+        "water supply",
+        "reservoir",
+        "catchment",
+        "cwa"
+    ],
+    "agriculture": [
+        "farmer",
+        "farmers",
+        "crop",
+        "crops",
+        "food",
+        "food security",
+        "livestock"
+    ],
+    "tourism": [
+        "hotel",
+        "hotels",
+        "visitor",
+        "visitors",
+        "hospitality",
+        "travel"
+    ],
+    "environment": [
+        "climate",
+        "green",
+        "renewable",
+        "solar",
+        "energy",
+        "waste",
+        "recycling"
+    ],
+    "infrastructure": [
+        "road",
+        "roads",
+        "bridge",
+        "transport",
+        "airport",
+        "port",
+        "construction"
+    ]
+}

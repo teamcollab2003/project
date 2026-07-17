@@ -1,0 +1,7 @@
+commands for angular
+
+component generation
+ng g c component-name
+
+pages generationng 
+g c pages/page-name

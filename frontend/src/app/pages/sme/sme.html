@@ -1,0 +1,88 @@
+<section class="page">
+
+    <!-- LEFT SIDE -->
+
+    <div class="content">
+
+        <h1>🏢 Enterprises & SMEs</h1>
+
+        <p class="intro">
+
+            Discover the key measures introduced in the Mauritius Budget
+            2026–2027 to support enterprises, SMEs and start-ups.
+
+            Click on any measure to learn more or ask the AI Assistant
+            for further explanations.
+
+        </p>
+
+        @for(card of cards; track card.title){
+
+        <div class="budget-card" (click)="toggle(card)">
+
+            <div class="card-header">
+
+                <div class="icon">
+
+                    {{ card.icon }}
+
+                </div>
+
+                <div class="text">
+
+                    <h3>{{ card.title }}</h3>
+
+                    <p>{{ card.subtitle }}</p>
+
+                </div>
+
+                <div class="arrow">
+
+                    @if(card.expanded){
+
+                    ▲
+
+                    } @else {
+
+                    ▼
+
+                    }
+
+                </div>
+
+            </div>
+
+            @if(card.expanded){
+
+            <div class="card-details">
+
+                <ul>
+
+                    @for(point of card.points; track point){
+
+                    <li>{{ point }}</li>
+
+                    }
+
+                </ul>
+
+            </div>
+
+            }
+
+        </div>
+
+        }
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="assistant">
+
+        <app-chatbot section="sme">
+        </app-chatbot>
+
+    </div>
+
+</section>

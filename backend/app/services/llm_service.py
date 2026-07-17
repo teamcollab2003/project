@@ -13,20 +13,40 @@ client = OpenAI(
 )
 
 
-def ask_llm(prompt: str):
+def ask_llm(system_prompt, context, user_message):
 
     response = client.chat.completions.create(
+
         model=LLM_MODEL,
+
         messages=[
+
+            {
+                "role": "system",
+                "content": system_prompt
+            },
+
+            {
+                "role": "system",
+                "content":
+                f"""
+Official Budget Context
+
+{context}
+"""
+            },
+
             {
                 "role": "user",
-                "content": prompt
+                "content": user_message
             }
-        ],
-        temperature=LLM_TEMPERATURE,
-        max_tokens=LLM_MAX_TOKENS
-    )
 
-    print(f"Model: {response.model}")
+        ],
+
+        temperature=LLM_TEMPERATURE,
+
+        max_tokens=LLM_MAX_TOKENS
+
+    )
 
     return response.choices[0].message.content

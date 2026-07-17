@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class FloatingTtsComponent {
   selectedLanguage: 'eng' | 'fra' | 'mfe' = 'eng';
-  isTtsEnabled: boolean = true;
+  isTtsEnabled: boolean = false;
   statusMessage: string = 'Hover over any text on the screen to listen!';
   private currentAudio: HTMLAudioElement | null = null;
   private lastHoveredElement: HTMLElement | null = null;
