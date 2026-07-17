@@ -1,0 +1,59 @@
+<div class="chatbot-card">
+
+    <div class="chatbot-header">
+
+        <div class="bot-icon">
+            🤖
+        </div>
+
+        <div>
+
+            <h3>Smart Budget Assistant</h3>
+
+            <span>AI Budget Expert</span>
+
+        </div>
+
+    </div>
+
+    <div class="messages" #chatContainer>
+
+        @for(message of messages; track $index){
+
+        <div class="message" [class.user]="message.sender === 'user'"
+            [class.assistant]="message.sender === 'assistant'">
+
+            {{ message.text }}
+
+        </div>
+
+        }
+
+        @if(loading){
+
+        <!-- <div class="message assistant thinking">
+
+            Thinking...
+
+        </div> -->
+
+        }
+
+    </div>
+
+    <div class="input-area">
+
+        <textarea [(ngModel)]="userMessage" (keydown)="onKeyDown($event)"
+            placeholder="Ask a question about the budget..." rows="2">
+
+        </textarea>
+
+        <button (click)="sendMessage()" [disabled]="loading || userMessage.trim()===''">
+        
+            {{ loading ? 'Sending...' : 'Send' }}
+        
+        </button>
+
+    </div>
+
+</div>

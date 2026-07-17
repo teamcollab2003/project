@@ -149,7 +149,7 @@ def recursive_search(obj: Any, keywords, results):
 # Search both budget files
 # -------------------------------------------------------------------
 
-def search_budget(section, question, top_k=3):
+def search_budget(section, question, top_k=8):
 
     keywords = tokenize(question)
 

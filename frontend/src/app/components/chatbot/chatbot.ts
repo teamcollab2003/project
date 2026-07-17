@@ -28,7 +28,7 @@ interface ChatMessage {
   templateUrl: './chatbot.html',
   styleUrl: './chatbot.css'
 })
-export class ChatbotComponent implements OnInit, AfterViewChecked {
+export class ChatbotComponent implements OnInit {
 
   @Input() section = 'general';
 
@@ -54,14 +54,14 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
       text: this.getGreeting()
 
     });
-
+setTimeout(() => this.scrollToBottom());
   }
 
-  ngAfterViewChecked(): void {
+  // ngAfterViewChecked(): void {
 
-    this.scrollToBottom();
+  //   this.scrollToBottom();
 
-  }
+  // }
 
   private scrollToBottom() {
 
@@ -177,6 +177,8 @@ Ask me any question related to the Mauritius Budget 2026–2027.`;
 
     });
 
+    setTimeout(() => this.scrollToBottom());
+    
     this.userMessage = '';
 
     this.loading = true;
@@ -195,41 +197,37 @@ Ask me any question related to the Mauritius Budget 2026–2027.`;
 
     ).subscribe({
 
-      next: (response) => {
+    next: (response) => {
 
-        console.log("Response received:", response);
+        console.log("NEXT");
 
-        this.messages.push({
+        this.messages = [
 
-          sender: 'assistant',
+            ...this.messages,
 
-          text: this.cleanReply(response.reply)
+            {
 
-        });
+                sender: 'assistant',
 
-        this.loading = false;
+                text: this.cleanReply(response.reply)
 
-        console.log("Loading false");
+            }
 
-      },
-
-      error: (err) => {
-
-        console.error(err);
-
-        this.messages.push({
-
-          sender: 'assistant',
-
-          text: 'Sorry, I could not contact the Smart Budget server.'
-
-        });
+        ];
 
         this.loading = false;
 
-      }
+    },
 
-    });
+    error: err => {
+
+        console.log(err);
+
+        this.loading = false;
+
+    }
+
+});
 
   }
 
